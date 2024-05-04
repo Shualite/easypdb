@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "easypdb"
+version = "0.1.0"
+description = "A sample Python debugger package"
+authors = [{name = "Your Name", email = "your.email@example.com"}]
+requires-python = ">= 2.7"
+license = {text = "MIT License"}
+readme = "README.md"
+dependencies = [
+  "pdbpp",
+  "fancycompleter @ git+https://github.com/pdbpp/fancycompleter@master#egg=fancycompleter",
+  "wmctrl",
+  "pygments",
+  "six",
+]
+
